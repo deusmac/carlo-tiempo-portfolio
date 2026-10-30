@@ -30,6 +30,7 @@ function openProject(id,trigger){
 }
 document.addEventListener('click',e=>{const trigger=e.target.closest('[data-project]');if(trigger)openProject(trigger.dataset.project,trigger);});
 document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));renderProjects(button.dataset.filter);}));
+document.querySelectorAll('[data-experience]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-experience]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));document.querySelectorAll('[data-timeline]').forEach(panel=>{panel.hidden=panel.dataset.timeline!==button.dataset.experience;});}));
 document.querySelector('.dialog-close').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',e=>{if(e.target===dialog){const b=dialog.getBoundingClientRect();if(e.clientX<b.left||e.clientX>b.right||e.clientY<b.top||e.clientY>b.bottom)dialog.close();}});
 dialog.addEventListener('close',()=>{document.body.classList.remove('modal-open');previousFocus?.focus();});
