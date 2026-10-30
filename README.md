@@ -16,6 +16,7 @@ Publish the `main` branch from the root directory in repository Settings, Pages.
 - `app.js`: project index and case-study details.
 - `style.css`: typography, colors, layout, and responsive rules.
 - `assets/mark.svg`: favicon.
+- `resume/John-Carlo-Tiempo-AI-Automation-Resume.pdf`: two-page, photo-free AI automation resume. Direct public PDF link: https://deusmac.github.io/carlo-tiempo-portfolio/resume/John-Carlo-Tiempo-AI-Automation-Resume.pdf
 
 The page works without a build tool. Fonts are requested from Google Fonts, with local fallbacks. No analytics, accounts, tracking scripts, or backend services are included. The copy-email action requires browser clipboard permission; an actionable fallback is displayed if unavailable. The experience selector switches between engineering/construction and automation/e-commerce timelines.
 
